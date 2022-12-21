@@ -1,4 +1,5 @@
 import { Avatar, Container } from '@mui/material';
+import { render } from 'react-dom';
 import Table, { ColConfig } from '../components/Table';
 import students from '../mock/defaultValues';
 import { formatPhone } from '../utils/strings';
@@ -14,9 +15,12 @@ const tableConfig: ColConfig[] = [
     label: 'Student Name'
   },
   {
-    key: 'phone',
-    label: 'Phone #',
-    transformValue: (phone: string) => formatPhone(phone)
+    key: 'totalHours',
+    label: 'Total Hours'
+  },
+  {
+    key: 'buttons',
+    label: 'Edit/View'
   }
 ];
 

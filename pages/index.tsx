@@ -1,4 +1,5 @@
 import { Container } from '@mui/material';
+import Dashboard from './dashboard';
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       width: '100vw',
       height: '100vh',
     }}>
-      Hello World
+      <Dashboard/>
     </Container>
   )
 }

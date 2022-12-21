@@ -104,7 +104,7 @@ const Table = <T extends {}>({
               nowrap={nowrap}
             />
           </TableHead>
-          <TableBody>
+          <TableBody>            
             {getTableContent()}
           </TableBody>
         </Table>
